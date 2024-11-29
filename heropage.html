@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/ac83d38264.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      //mobile menu
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- top nav  -->
+    <div class="bg-black text-white">
+      <div
+        class="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-2"
+      >
+        <!-- left section-->
+        <div class="flex items-center space-x-6 text-sm">
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-phone"></i>
+            <span>01-2574451, +977-9800000000</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fa-regular fa-envelope"></i>
+            <span>info@gmail.com</span>
+          </div>
+        </div>
+
+        <!-- right section-->
+        <div class="flex items-center space-x-4 mt-2 md:mt-0">
+          <!-- social icons -->
+          <a href="#" class="text-white">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#" class="text-white">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="text-white">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <!-- apply now button -->
+          <a
+            href="#"
+            class="bg-white text-black px-2 py-1 text-xs rounded hover:bg-gray-200 md:px-4 md:py-2 md:text-sm"
+          >
+            Apply Now
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- second nav -->
+    <nav class="bg-white shadow">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- logo -->
+          <div class="flex items-center">
+            <img src="logo.png" alt="Logo" class="h-10 w-10" />
+            <div class="ml-3">
+              <h1 class="text-lg font-bold text-green-600 leading-none">
+                BRIGHT FUTURE
+              </h1>
+              <span class="text-md text-blue-600 font-bold">
+                COLLEGE/SCHOOL
+              </span>
+            </div>
+          </div>
+
+          <!-- hamburger icon-->
+          <div class="flex md:hidden">
+            <button
+              onclick="toggleMenu()"
+              class="text-gray-700 hover:text-gray-900"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <!-- nav links -->
+          <div class="hidden md:flex space-x-6">
+            <a href="#" class="text-gray-700 hover:text-blue-500 font-medium"
+              >Home</a
+            >
+
+            <div>
+              <button
+                class="text-gray-700 hover:text-blue-500 font-medium flex items-center"
+              >
+                About Us
+                <i class="fa-solid fa-chevron-down ml-2"></i>
+              </button>
+            </div>
+
+            <div>
+              <button
+                class="text-gray-700 hover:text-blue-500 font-medium flex items-center"
+              >
+                Programs
+                <i class="fa-solid fa-chevron-down ml-2"></i>
+              </button>
+            </div>
+            <div>
+              <button
+                class="text-gray-700 hover:text-blue-500 font-medium flex items-center"
+              >
+                Facilities
+                <i class="fa-solid fa-chevron-down ml-2"></i>
+              </button>
+            </div>
+            <div>
+              <button
+                class="text-gray-700 hover:text-blue-500 font-medium flex items-center"
+              >
+                Student Group
+                <i class="fa-solid fa-chevron-down ml-2"></i>
+              </button>
+            </div>
+
+            <a href="#" class="text-gray-700 hover:text-blue-500 font-medium"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile menu-->
+      <div id="mobile-menu" class="hidden md:hidden bg-gray-100">
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Home</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >About Us</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Facilities</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Students Zone</a
+        >
+
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Programs</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- hero -->
+
+    <section
+      class="relative w-full h-screen bg-cover bg-center"
+      style="
+        background-image: url('https://plus.unsplash.com/premium_photo-1680807988328-7ba28ad24d9f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      "
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+      <div
+        class="relative z-10 flex items-center justify-center w-full h-full text-center text-white px-6 md:px-12"
+      >
+        <div class="max-w-3xl space-y-6">
+          <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight">
+            Discover Your Future at <br />
+            <span class="text-green-500">Bright Future</span>
+          </h1>
+          <p class="text-base md:text-lg lg:text-xl">
+            We don't just give students an education, we set them up for success
+            in a career.
+          </p>
+          <a
+            href="#"
+            class="inline-block px-3 py-1 md:mt-4 md:px-6 md:py-3 bg-green-600 text-white font-semibold rounded-lg text-lg hover:bg-green-700 transition duration-300"
+          >
+            Apply Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- page 1 -->
+
+    <div class="max-w-7xl mx-auto bg-white rounded-lg p-8">
+      <!-- text and images -->
+      <div class="flex flex-col lg:flex-row items-center lg:items-start gap-8">
+        <!-- text -->
+        <div class="flex-1 text-justify">
+          <h2 class="text-lg text-green-600 font-bold">
+            Dear students/guardians
+          </h2>
+          <h1 class="text-3xl font-bold text-gray-800 mt-4">
+            Congratulate all SEE graduates on your grand success in the SEE.
+          </h1>
+          <p class="text-gray-700 text-justify mt-4 leading-relaxed">
+            It is very immense to congratulate all SEE graduates on your grand
+            success in the SEE, and I am equally delighted to welcome you all
+            for your further academic journey at BFC. BFC has undergone its
+            challenging phase quite successfully. At a time when unhealthy
+            practices are trying to commercialize education, BFC has stood,
+            within its short span of life, as a model pillar to prove that
+            quality education can be inculcated in the students with moderate
+            fees in a viable atmosphere.
+          </p>
+          <p class="text-gray-700 text-justify mt-4 leading-relaxed">
+            We are committed to make BFC as the first choice of the selective
+            candidates in the next few years. Leadership, Communication skill,
+            and management abilities are the three trinity of the age.
+            Collective effort of parents, students, faculty members, and the
+            college management have equal share in the career building of any
+            student. The role of all four is equal and profound.
+          </p>
+          <p class="text-gray-700 text-justify mt-4 leading-relaxed">
+            Because of its commitment to impact both knowledge and skill among
+            the students, BFC has set its foot on the summit of fame and
+            popularity within a short span of time. With best wishes in the days
+            to come, the scholars of BFC are waiting that they would be the real
+            scholars in their respective fields.
+          </p>
+          <button
+            class="mt-6 px-6 py-3 bg-green-600 text-white font-medium rounded-lg shadow hover:bg-green-700 transition"
+          >
+            Join Us →
+          </button>
+        </div>
+        <!-- images-->
+        <div class="flex-1 grid grid-cols-1 gap-6 md:mt-20">
+          <img
+            src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="rounded-lg shadow h-[250px] w-[450px] lg:ml-40"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1496664444929-8c75efb9546f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="rounded-lg shadow h-[250px] w-[450px] lg:ml-20"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- page 2 -->
+
+    <div class="max-w-7xl mx-auto bg-white shadow-md rounded-lg p-8">
+      <!-- page 2 container -->
+      <div class="flex flex-col lg:flex-row items-center lg:items-start gap-8">
+        <!-- page 2 image section -->
+        <div class="flex-1 grid grid-cols-2 gap-4">
+          <div class="overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="object-cover"
+            />
+          </div>
+          <div class="overflow-hidden ml-[-16px]">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1661868868760-6ff0a1696b84?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="rounded-tr-full object-cover"
+            />
+          </div>
+          <div class="overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="rounded-bl-full object-cover"
+            />
+          </div>
+          <div class="overflow-hidden mt-[-10px]">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="h-[250px] w-[400px] object-cover"
+            />
+          </div>
+        </div>
+        <!-- page 2 text section -->
+        <div class="flex-1">
+          <h2 class="text-lg text-green-600 font-bold">Features</h2>
+          <h1 class="text-3xl font-bold text-gray-800 mt-4">
+            We are always working to provide you the best of the features in all
+            aspects.
+          </h1>
+          <p class="text-gray-700 mt-4 leading-relaxed text-justify">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+            quisquam fugiat at! Repudiandae vel, debitis rem cupiditate suscipit
+            ratione. Tenetur totam deleniti consectetur dicta quam perspiciatis
+            qui ipsam esse laboriosam, veritatis mollitia, nulla, deserunt
+            voluptatem debitis sequi sint id. Quaerat voluptatibus tempora
+            dolorum dolore exercitationem. Perferendis obcaecati totam corrupti
+            earum illum qui minus minima consequuntur. Sequi deleniti voluptates
+            vitae incidunt.
+          </p>
+          <p class="text-gray-700 mt-4 leading-relaxed text-justify">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
+            quisquam fugiat at! Repudiandae vel, debitis rem cupiditate suscipit
+            ratione. Tenetur totam deleniti consectetur dicta quam perspiciatis
+            qui ipsam esse laboriosam, veritatis mollitia, nulla, deserunt
+            voluptatem debitis sequi sint id. Quaerat voluptatibus tempora
+            dolorum dolore exercitationem. Perferendis obcaecati totam corrupti
+            earum illum qui minus minima consequuntur. Sequi deleniti voluptates
+            vitae incidunt.
+          </p>
+          <button
+            class="mt-6 px-6 py-3 bg-green-600 text-white font-medium rounded-lg shadow hover:bg-green-700 transition"
+          >
+            Learn More →
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- page 3 -->
+
+    <div class="bg-gray-900 text-white">
+      <!-- page 3 header section -->
+      <div class="max-w-7xl mx-auto px-6 py-12 text-center">
+        <h2 class="text-green-500 text-lg font-semibold">Our Courses</h2>
+        <h1 class="text-4xl font-bold mt-4">
+          Our Best Courses Offered and <br />
+          Teach By Best of The Instructors
+        </h1>
+      </div>
+
+      <!-- page 3 courses section -->
+      <div class="max-w-7xl mx-auto px-6 py-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Course Card 1 -->
+          <div
+            class="bg-white text-gray-900 rounded-lg shadow-lg overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="w-full h-40 object-cover p-3"
+            />
+            <div class="p-4">
+              <div class="flex items-center justify-between">
+                <h4 class="text-lg font-medium">Basics of JAVA</h4>
+                <p
+                  class="inline-block bg-green-100 text-green-600 text-sm px-3 py-1 rounded-full"
+                >
+                  Bachelors
+                </p>
+              </div>
+              <p class="text-gray-700 mt-2 text-sm">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Praesentium ipsam autem voluptates laudantium ab iste dolorem
+                minus dicta ex veritatis voluptatum ut similique dolor
+                doloremque necessitatibus porro, dolorum ullam architecto.
+              </p>
+
+              <a
+                href="#"
+                class="block mt-6 text-green-600 font-medium hover:text-green-800 flex items-center"
+              >
+                View Course →
+              </a>
+            </div>
+          </div>
+
+          <!-- Course Card 2 -->
+          <div
+            class="bg-white text-gray-900 rounded-lg shadow-lg overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="w-full h-40 object-cover p-3"
+            />
+            <div class="p-4">
+              <div class="flex items-center justify-between">
+                <h4 class="text-lg font-medium">Basics of JAVA</h4>
+                <p
+                  class="inline-block bg-green-100 text-green-600 text-sm px-3 py-1 rounded-full"
+                >
+                  Masters
+                </p>
+              </div>
+              <p class="text-gray-700 mt-2 text-sm">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Praesentium ipsam autem voluptates laudantium ab iste dolorem
+                minus dicta ex veritatis voluptatum ut similique dolor
+                doloremque necessitatibus porro, dolorum ullam architecto.
+              </p>
+
+              <a
+                href="#"
+                class="block mt-6 text-green-600 font-medium hover:text-green-800 flex items-center"
+              >
+                View Course →
+              </a>
+            </div>
+          </div>
+
+          <!-- Course Card 3 -->
+          <div
+            class="bg-white text-gray-900 rounded-lg shadow-lg overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="w-full h-40 object-cover p-3"
+            />
+            <div class="p-4">
+              <div class="flex items-center justify-between">
+                <h4 class="text-lg font-medium">Basics of JAVA</h4>
+                <p
+                  class="inline-block bg-green-100 text-green-600 text-sm px-3 py-1 rounded-full"
+                >
+                  Bachelors
+                </p>
+              </div>
+              <p class="text-gray-700 mt-2 text-sm">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Praesentium ipsam autem voluptates laudantium ab iste dolorem
+                minus dicta ex veritatis voluptatum ut similique dolor
+                doloremque necessitatibus porro, dolorum ullam architecto.
+              </p>
+
+              <a
+                href="#"
+                class="block mt-6 text-green-600 font-medium hover:text-green-800 flex items-center"
+              >
+                View Course →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- page 3 view courses button -->
+      <div
+        class="max-w-7xl mx-auto px-6 py-8 text-center flex items-center justify-around"
+      >
+        <h3 class="hidden lg:block text-xl font-bold">
+          View All <br />
+          Courses
+        </h3>
+        <hr class="w-[60%] hidden lg:block" />
+        <button class="border border-2 border-solid border-white rounded-full">
+          <a
+            href="#"
+            class="inline-flex items-center bg-gray-800 text-gray-200 font-medium px-6 py-3 rounded-full hover:bg-gray-700 transition"
+          >
+            All Courses →
+          </a>
+        </button>
+      </div>
+    </div>
+
+    <!-- page 4, events page -->
+
+    <div class="events-page">
+      <div class="max-w-7xl mx-auto px-4 py-10">
+        <!-- Heading -->
+        <div class="text-center mb-10">
+          <h2 class="text-green-600 text-lg font-semibold">Upcoming Events</h2>
+          <h1 class="text-3xl font-bold text-gray-900 mt-2">
+            These events are designed to enhance our
+            <br />
+            students' skills
+          </h1>
+        </div>
+
+        <!-- events section -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto"
+        >
+          <!-- card 1 -->
+          <div
+            class="bg-white rounded-lg shadow-md hover:bg-gray-100 overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">
+                Why Java is the best programming language?
+              </h3>
+              <p class="text-gray-600 text-sm mt-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
+                sunt dicta qui adipisci quod autem fugiat voluptatum commodi,
+                optio esse!
+              </p>
+              <a
+                href="#"
+                class="text-green-600 text-md font-semibold mt-4 inline-block border border-2 border-green-600 p-3 rounded-sm hover:shadow-[5px_5px_0px_#73EC8B] hover:bg-white"
+              >
+                Read Article →
+              </a>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="bg-white rounded-lg shadow-md hover:bg-gray-100 overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">
+                Why Java is the best programming language?
+              </h3>
+              <p class="text-gray-600 text-sm mt-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
+                sunt dicta qui adipisci quod autem fugiat voluptatum commodi,
+                optio esse!
+              </p>
+              <a
+                href="#"
+                class="text-green-600 text-md font-semibold mt-4 inline-block border border-2 border-green-600 p-3 rounded-sm hover:shadow-[5px_5px_0px_#73EC8B] hover:bg-white"
+              >
+                Read Article →
+              </a>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="bg-white rounded-lg shadow-md hover:bg-gray-100 overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-4">
+              <h3 class="text-lg font-semibold text-gray-800">
+                Why Java is the best programming language?
+              </h3>
+              <p class="text-gray-600 text-sm mt-2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic
+                sunt dicta qui adipisci quod autem fugiat voluptatum commodi,
+                optio esse!
+              </p>
+              <a
+                href="#"
+                class="text-green-600 text-md font-semibold mt-4 inline-block border border-2 border-green-600 p-3 rounded-sm hover:shadow-[5px_5px_0px_#73EC8B] hover:bg-white"
+              >
+                Read Article →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- page 5, testimonials -->
+    <div class="max-w-7xl mx-auto px-4 py-10">
+      <!-- testimonials heading -->
+      <div class="text-left mb-10 flex items-center justify-between">
+        <div>
+          <h2 class="text-xl font-semibold">Reviews</h2>
+          <h1 class="text-4xl text-gray-900 mt-2">
+            What our students are saying
+          </h1>
+        </div>
+        <div class="testimonials-buttons flex gap-3 text-3xl">
+          <i class="fa-solid fa-arrow-left-long hidden lg:block"></i>
+          <i class="fa-solid fa-arrow-right-long hidden lg:block"></i>
+        </div>
+      </div>
+
+      <!-- trestimonials carousel section -->
+      <div class="relative">
+        <!-- testimonials carousel container -->
+        <div
+          class="flex space-x-6 lg:space-x-8 snap-x overflow-x-scroll no-scrollbar"
+        >
+          <!-- testimonial 1 -->
+          <div
+            class="bg-black text-white rounded-lg p-6 w-80 flex-shrink-0 relative min-h-[250px]"
+          >
+            <p class="text-sm mb-4">Lorem ipsum dolor sit amet consectetur</p>
+            <div class="flex items-center absolute inset-x-6 bottom-5">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1683121366070-5ceb7e007a97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="w-12 h-12 rounded-full mr-4 object-cover"
+              />
+              <div>
+                <h4 class="font-bold text-base">John Doe</h4>
+                <p class="text-sm text-gray-400">UI Designer at Google</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- testimonial 2 -->
+          <div
+            class="bg-black text-white rounded-lg p-6 w-80 flex-shrink-0 relative min-h-[250px]"
+          >
+            <p class="text-sm mb-4">Lorem ipsum dolor sit amet consectetur</p>
+            <div class="flex items-center absolute inset-x-6 bottom-5">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1683121366070-5ceb7e007a97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="w-12 h-12 rounded-full mr-4 object-cover"
+              />
+              <div>
+                <h4 class="font-bold text-base">John Doe</h4>
+                <p class="text-sm text-gray-400">UI Designer at Google</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- testimonial 3 -->
+          <div
+            class="bg-black text-white rounded-lg p-6 w-80 flex-shrink-0 relative min-h-[250px]"
+          >
+            <p class="text-sm mb-4">Lorem ipsum dolor sit amet consectetur</p>
+            <div class="flex items-center absolute inset-x-6 bottom-5">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1683121366070-5ceb7e007a97?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt=""
+                class="w-12 h-12 rounded-full mr-4 object-cover"
+              />
+              <div>
+                <h4 class="font-bold text-base">John Doe</h4>
+                <p class="text-sm text-gray-400">UI Designer at Google</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- page 6, news section -->
+
+    <div class="max-w-7xl mx-auto px-4 py-10">
+      <!-- news heading -->
+      <div class="text-center mb-10">
+        <h2 class="text-green-600 text-2xl font-semibold">News</h2>
+        <h1 class="text-5xl font text-gray-900 mt-2">Latest News</h1>
+      </div>
+
+      <!-- news cards -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-10 p-5 w-[90%] m-auto"
+      >
+        <!-- card 1 -->
+        <div
+          class="bg-white shadow-md p-6 hover:shadow-[7px_7px_0px_#000] hover:bg-gray-100"
+        >
+          <h3 class="text-lg font-bold text-gray-800 mb-2">
+            International Business Consultant
+          </h3>
+          <p class="text-sm text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            dolorum rerum alias. Sapiente rem non blanditiis, ex officia
+            reiciendis accusamus eveniet eaque maxime recusandae tenetur quo
+            quibusdam dolore, asperiores dolores.
+          </p>
+        </div>
+
+        <!-- card 2 -->
+        <div
+          class="bg-white shadow-md p-6 hover:shadow-[7px_7px_0px_#000] hover:bg-gray-100"
+        >
+          <h3 class="text-lg font-bold text-gray-800 mb-2">
+            International Business Consultant
+          </h3>
+          <p class="text-sm text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            dolorum rerum alias. Sapiente rem non blanditiis, ex officia
+            reiciendis accusamus eveniet eaque maxime recusandae tenetur quo
+            quibusdam dolore, asperiores dolores.
+          </p>
+        </div>
+
+        <!-- card 3 -->
+        <div
+          class="bg-white shadow-md p-6 hover:shadow-[7px_7px_0px_#000] hover:bg-gray-100"
+        >
+          <h3 class="text-lg font-bold text-gray-800 mb-2">
+            International Business Consultant
+          </h3>
+          <p class="text-sm text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            dolorum rerum alias. Sapiente rem non blanditiis, ex officia
+            reiciendis accusamus eveniet eaque maxime recusandae tenetur quo
+            quibusdam dolore, asperiores dolores.
+          </p>
+        </div>
+
+        <!-- card 4 -->
+        <div
+          class="bg-white shadow-md p-6 hover:shadow-[7px_7px_0px_#000] hover:bg-gray-100"
+        >
+          <h3 class="text-lg font-bold text-gray-800 mb-2">
+            International Business Consultant
+          </h3>
+          <p class="text-sm text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            dolorum rerum alias. Sapiente rem non blanditiis, ex officia
+            reiciendis accusamus eveniet eaque maxime recusandae tenetur quo
+            quibusdam dolore, asperiores dolores.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10">
+      <div
+        class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 justify-between"
+      >
+        <!-- footer logo and contact -->
+        <div>
+          <img
+            src="https://www.harlow-college.ac.uk/images/harlow_college/study-options/course-areas/bright-futures/redesign/bright-futures-logo-large-cropped.png"
+            alt=""
+            class="mb-4 w-[300px] h-[90px]"
+          />
+          <ul class="space-y-2">
+            <li class="flex items-center space-x-2">
+              <i class="fa-solid fa-location-pin"></i>
+              <span>Satdobato, Lalitpur, Nepal</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fa-solid fa-phone"></i>
+              <span>01-2574451, +977-9800000000</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fa-regular fa-envelope"></i>
+              <span>info@gmail.com, brightfuture.edu.np</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fa-regular fa-clock"></i>11
+              <span>Opening Hours: 7AM - 4PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- footer useful links -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">USEFUL LINKS</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-green-500">Join Us</a></li>
+            <li><a href="#" class="hover:text-green-500">About Us</a></li>
+            <li><a href="#" class="hover:text-green-500">Features</a></li>
+            <li><a href="#" class="hover:text-green-500">Support Center</a></li>
+            <li><a href="#" class="hover:text-green-500">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- footer programs -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">PROGRAMS</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-green-500">+2 Management</a></li>
+            <li>
+              <a href="#" class="hover:text-green-500"
+                >Bachelor of Business Studies (BBS)</a
+              >
+            </li>
+            <li><a href="#" class="hover:text-green-500">MBS Program</a></li>
+            <li><a href="#" class="hover:text-green-500">+2 Science</a></li>
+          </ul>
+        </div>
+
+        <!-- subscribe newsletter -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">
+            SUBSCRIBE NEWSLETTER
+          </h3>
+          <form>
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full p-2 mb-4 bg-gray-800 text-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
+            <button
+              class="w-full p-2 bg-green-600 text-white font-semibold rounded hover:bg-green-700"
+            >
+              Subscribe
+            </button>
+          </form>
+          <p class="mt-4 text-sm text-gray-400">
+            Be the first to know about exclusive drops and promotions
+          </p>
+          <div class="flex space-x-4 mt-4 text-3xl justify-evenly">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-youtube"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="text-center text-gray-500 text-sm mt-10">
+        @ 2025 Bright Future
+      </div>
+    </footer>
+  </body>
+</html>
