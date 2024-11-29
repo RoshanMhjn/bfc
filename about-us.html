@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Second Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/ac83d38264.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- top nav -->
+    <div class="bg-black text-white">
+      <div
+        class="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-2"
+      >
+        <!-- left section-->
+        <div class="flex items-center space-x-6 text-sm">
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-phone"></i>
+            <span>01-2574451, +977-9800000000</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fa-regular fa-envelope"></i>
+            <span>info@gmail.com</span>
+          </div>
+        </div>
+
+        <!-- right section-->
+        <div class="flex items-center space-x-4 mt-2 md:mt-0">
+          <!-- social icons -->
+          <a href="#" class="text-white">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#" class="text-white">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="text-white">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <!-- apply now button -->
+          <a
+            href="#"
+            class="bg-white text-black px-2 py-1 text-xs rounded hover:bg-gray-200 md:px-4 md:py-2 md:text-sm"
+          >
+            Apply Now
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- second nav -->
+    <nav class="bg-white shadow">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- logo -->
+          <div class="flex items-center">
+            <img src="logo.png" alt="Logo" class="h-10 w-10" />
+            <div class="ml-3">
+              <h1 class="text-lg font-bold text-green-600 leading-none">
+                BRIGHT FUTURE
+              </h1>
+              <span class="text-md text-blue-600 font-bold">
+                COLLEGE/SCHOOL
+              </span>
+            </div>
+          </div>
+
+          <!-- hamburger icon-->
+          <div class="flex md:hidden">
+            <button
+              onclick="toggleMenu()"
+              class="text-gray-700 hover:text-gray-900"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <!-- nav links -->
+          <div class="hidden md:flex space-x-6">
+            <a href="#" class="text-gray-700 hover:text-blue-500 font-medium"
+              >Home</a
+            >
+
+            <div>
+              <button
+                class="text-gray-700 hover:text-blue-500 font-medium flex items-center"
+              >
+                About Us
+                <i class="fa-solid fa-chevron-down ml-2"></i>
+              </button>
+            </div>
+
+            <div>
+              <button
+                class="text-gray-700 hover:text-blue-500 font-medium flex items-center"
+              >
+                Programs
+                <i class="fa-solid fa-chevron-down ml-2"></i>
+              </button>
+            </div>
+            <div>
+              <button
+                class="text-gray-700 hover:text-blue-500 font-medium flex items-center"
+              >
+                Facilities
+                <i class="fa-solid fa-chevron-down ml-2"></i>
+              </button>
+            </div>
+            <div>
+              <button
+                class="text-gray-700 hover:text-blue-500 font-medium flex items-center"
+              >
+                Student Group
+                <i class="fa-solid fa-chevron-down ml-2"></i>
+              </button>
+            </div>
+
+            <a href="#" class="text-gray-700 hover:text-blue-500 font-medium"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile menu-->
+      <div id="mobile-menu" class="hidden md:hidden bg-gray-100">
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Home</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >About Us</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Facilities</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Students Zone</a
+        >
+
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Programs</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- about us hero section -->
+    <div>
+      <section
+        class="relative bg-cover bg-center h-64 text-white"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        "
+      >
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div
+          class="relative container mx-auto h-full flex flex-col justify-center items-center"
+        >
+          <h1
+            class="text-3xl font-bold uppercase underline underline-offset-[16px] decoration-green-600"
+          >
+            About Us
+          </h1>
+        </div>
+      </section>
+
+      <!-- content -->
+      <section class="mx-auto py-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 lg:px-16">
+          <!-- image -->
+          <div class="rounded-bl-[10rem] overflow-hidden">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1679916743693-03ea85e16b5c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="w-full object-cover max-h-[500px]"
+            />
+          </div>
+
+          <!-- content -->
+          <div class="px-6 text-justify">
+            <h2 class="text-2xl font-bold text-green-700 mb-4">About us</h2>
+            <h3 class="text-xl font-semibold mb-2">What you should know</h3>
+            <p class="text-gray-700 leading-6">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </p>
+          </div>
+        </div>
+
+        <!-- mission and vision -->
+        <div
+          class="mt-20 lg:mb-10 p-2 grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-green-100 w-full lg:px-8"
+        >
+          <!-- left text -->
+          <div class="lg:px-10 py-10 px-6 text-justify">
+            <h2 class="text-3xl font-bold mb-4">Our Mission & Vision</h2>
+            <p class="text-gray-700 leading-6">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </p>
+          </div>
+
+          <!-- image -->
+          <div class="overflow-visible">
+            <img
+              src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1864&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="lg:max-w-[60%] object-cover m-auto lg:scale-125"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- admission banner -->
+
+    <section class="my-auto py-10 mt-0">
+      <div
+        class="bg-[#18191F] p-6 md:p-24 flex flex-col md:flex-row justify-between items-center"
+      >
+        <!-- left section -->
+        <div
+          class="text-center md:text-left mb-6 md:mb-0 text-white min-w-[50%]"
+        >
+          <h2 class="text-2xl md:text-4xl">Join Our New Batch</h2>
+          <p class="text-2xl md:text-4xl mt-2">Admission Form Open</p>
+        </div>
+
+        <!-- right section -->
+        <div class="text-center md:text-left md:px-12 font-semibold">
+          <p class="text-gray-300 text-sm md:text-base mb-6">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam,
+            ullam quod, fugit cumque accusantium tempora molestiae optio natus
+            accusamus possimus consequuntur repellendus fugiat molestias quaerat
+            voluptatem repellat reiciendis pariatur alias.
+          </p>
+          <!-- buttons -->
+          <div class="flex flex-col md:flex-row gap-4">
+            <button
+              class="bg-green-600 text-white font-medium py-2 px-4 rounded hover:bg-green-700"
+            >
+              Join Now
+            </button>
+            <button
+              class="border border-green-600 text-green-600 font-medium py-2 px-4 rounded hover:bg-green-600 hover:text-white"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- principal message -->
+
+    <section class="container mx-auto px-4 py-10">
+      <div class="p-6 md:p-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- image  -->
+          <div class="flex justify-center md:justify-start">
+            <img
+              src="https://images.unsplash.com/photo-1664382953518-4a664ab8a8c9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+              class="rounded-lg min-h-[60%] w-full object-cover lg:py-20"
+            />
+          </div>
+
+          <!-- text section -->
+          <div class="md:col-span-2 lg:px-10">
+            <h2 class="text-green-700 text-xl font-bold mb-2">Message</h2>
+            <h1 class="text-2xl md:text-4xl font-semibold mb-4">
+              Message from Principal
+            </h1>
+            <blockquote class="italic text-gray-600 mb-4">
+              “Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Doloribus quisquam amet tenetur soluta expedita distinctio quae!
+              Ducimus facilis facere commodi.”
+            </blockquote>
+            <p class="text-gray-700 mb-4">Dear students/guardians,</p>
+            <p class="text-gray-700 mb-4 text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
+              expedita quae facilis cum ut, iusto non nobis sed odio incidunt
+              veritatis voluptas beatae ab rem voluptates blanditiis aliquid
+              placeat quo. Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Tenetur necessitatibus quaerat eveniet mollitia reiciendis
+              laborum laboriosam in enim, tempore consequuntur reprehenderit
+              inventore debitis sed magni? Delectus recusandae error doloremque
+              ipsa!
+            </p>
+            <p class="text-gray-700 mb-4 text-justify">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+              quis, iste, pariatur maiores blanditiis ea explicabo voluptatem
+              corrupti quidem repellendus distinctio ex perspiciatis? Est
+              expedita aut quos quo necessitatibus doloribus? Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Quam neque explicabo dolor
+              beatae? Beatae esse earum iure cum repudiandae laborum molestias
+              architecto id nostrum modi? Blanditiis quod quia magni id!
+            </p>
+            <p class="text-gray-700 mb-6 text-justify">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium corrupti, voluptate soluta nihil vitae magnam. Rerum,
+              exercitationem illum commodi, molestias, suscipit corporis nulla
+              quasi ipsa ullam possimus ratione eius nihil?
+            </p>
+            <p class="text-gray-800 font-semibold">
+              Wishing you a bright future<br />
+              <span class="text-gray-600">Mr. Kishor Adhikari</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- faculty section -->
+
+    <section class="max-w-7xl mx-auto px-4 py-8 lg:px-16">
+      <p class="text-center text-green-600 text-lg mb-2 font-semibold">
+        Faculty Members
+      </p>
+      <h1
+        class="text-2xl lg:text-4xl font-semibold text-center text-gray-800 mb-6"
+      >
+        Our Dedicated Team
+      </h1>
+
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 lg:mb-8"
+      >
+        <!-- Card 1 -->
+        <div class="bg-white p-6 text-center">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="w-full h-[100%] rounded-t mx-auto object-cover"
+          />
+          <div
+            class="rounded-b border border-2 border-t-0 border-green-600 lg:p-2 shadow"
+          >
+            <h3 class="text-lg font-bold text-gray-800">Simme John</h3>
+            <p class="text-sm text-gray-600">Principal</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white p-6 text-center">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="w-full h-[100%] rounded-t mx-auto object-cover"
+          />
+          <div
+            class="rounded-b border border-2 border-t-0 border-green-600 lg:p-2 shadow"
+          >
+            <h3 class="text-lg font-bold text-gray-800">Simme John</h3>
+            <p class="text-sm text-gray-600">Principal</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white p-6 text-center">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="w-full h-[100%] rounded-t mx-auto object-cover"
+          />
+          <div
+            class="rounded-b border border-2 border-t-0 border-green-600 lg:p-2 shadow"
+          >
+            <h3 class="text-lg font-bold text-gray-800">Simme John</h3>
+            <p class="text-sm text-gray-600">Principal</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white p-6 text-center">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="w-full h-[100%] rounded-t mx-auto object-cover"
+          />
+          <div
+            class="rounded-b border border-2 border-t-0 border-green-600 lg:p-2 shadow"
+          >
+            <h3 class="text-lg font-bold text-gray-800">Simme John</h3>
+            <p class="text-sm text-gray-600">Principal</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white p-6 text-center">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="w-full h-[100%] rounded-t mx-auto object-cover"
+          />
+          <div
+            class="rounded-b border border-2 border-t-0 border-green-600 lg:p-2 shadow"
+          >
+            <h3 class="text-lg font-bold text-gray-800">Simme John</h3>
+            <p class="text-sm text-gray-600">Principal</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-white p-6 text-center">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1689539137236-b68e436248de?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="w-full h-[100%] rounded-t mx-auto object-cover"
+          />
+          <div
+            class="rounded-b border border-2 border-t-0 border-green-600 lg:p-2 shadow"
+          >
+            <h3 class="text-lg font-bold text-gray-800">Simme John</h3>
+            <p class="text-sm text-gray-600">Principal</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- salient fetures page -->
+
+    <section class="max-w-7xl mx-auto px-4 py-8">
+      <!-- header -->
+      <div class="text-center mb-8">
+        <p class="text-green-800 font-medium">Our Core Values</p>
+        <h2 class="text-3xl md:text-4xl font-semibold text-gray-800">
+          Salient Features
+        </h2>
+      </div>
+
+      <!-- features section -->
+      <div
+        class="flex flex-col md:flex-row lg:justify-around lg:px-16 px-6 gap-12"
+      >
+        <!-- Left Column -->
+        <ul
+          class="flex flex-col space-y-1 lg:space-y-3 text-left list-disc list-inside"
+        >
+          <li>Caring, loving and supportive environment.</li>
+          <li>Caring, loving and supportive environment.</li>
+          <li>Caring, loving and supportive environment.</li>
+          <li>Caring, loving and supportive environment.</li>
+          <li>Caring, loving and supportive environment.</li>
+          <li>Caring, loving and supportive environment.</li>
+          <li>Caring, loving and supportive environment.</li>
+          <li>Caring, loving and supportive environment.</li>
+        </ul>
+
+        <!-- Right Column -->
+        <ul class="list-disc list-inside flex flex-col space-y-1 lg:space-y-3">
+          <li>Several business and educational tours</li>
+          <li>Several business and educational tours</li>
+          <li>Several business and educational tours</li>
+          <li>Several business and educational tours</li>
+          <li>Several business and educational tours</li>
+          <li>Several business and educational tours</li>
+          <li>Several business and educational tours</li>
+          <li>Several business and educational tours</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- photo gallery -->
+
+    <section class="max-w-7xl mx-auto px-4 py-8">
+      <!-- header -->
+      <div class="text-center mb-8">
+        <p class="text-green-600 font-medium text-2xl">Gallery</p>
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+          Some Best Moment Captured
+        </h2>
+      </div>
+
+      <!-- photo grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="rounded-lg shadow-lg w-full"
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="rounded-lg shadow-lg w-full"
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="rounded-lg shadow-lg w-full"
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="rounded-lg shadow-lg w-full"
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="rounded-lg shadow-lg w-full"
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="rounded-lg shadow-lg w-full"
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="rounded-lg shadow-lg w-full"
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="rounded-lg shadow-lg w-full"
+          />
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+            class="rounded-lg shadow-lg w-full"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10">
+      <div
+        class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 justify-between"
+      >
+        <!-- footer logo and contact -->
+        <div>
+          <img
+            src="https://www.harlow-college.ac.uk/images/harlow_college/study-options/course-areas/bright-futures/redesign/bright-futures-logo-large-cropped.png"
+            alt=""
+            class="mb-4 w-[300px] h-[90px]"
+          />
+          <ul class="space-y-2">
+            <li class="flex items-center space-x-2">
+              <i class="fa-solid fa-location-pin"></i>
+              <span>Satdobato, Lalitpur, Nepal</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fa-solid fa-phone"></i>
+              <span>01-2574451, +977-9800000000</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fa-regular fa-envelope"></i>
+              <span>info@gmail.com, brightfuture.edu.np</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fa-regular fa-clock"></i>11
+              <span>Opening Hours: 7AM - 4PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- footer useful links -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">USEFUL LINKS</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-green-500">Join Us</a></li>
+            <li><a href="#" class="hover:text-green-500">About Us</a></li>
+            <li><a href="#" class="hover:text-green-500">Features</a></li>
+            <li><a href="#" class="hover:text-green-500">Support Center</a></li>
+            <li><a href="#" class="hover:text-green-500">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- footer programs -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">PROGRAMS</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-green-500">+2 Management</a></li>
+            <li>
+              <a href="#" class="hover:text-green-500"
+                >Bachelor of Business Studies (BBS)</a
+              >
+            </li>
+            <li><a href="#" class="hover:text-green-500">MBS Program</a></li>
+            <li><a href="#" class="hover:text-green-500">+2 Science</a></li>
+          </ul>
+        </div>
+
+        <!-- subscribe newsletter -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">
+            SUBSCRIBE NEWSLETTER
+          </h3>
+          <form>
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full p-2 mb-4 bg-gray-800 text-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
+            <button
+              class="w-full p-2 bg-green-600 text-white font-semibold rounded hover:bg-green-700"
+            >
+              Subscribe
+            </button>
+          </form>
+          <p class="mt-4 text-sm text-gray-400">
+            Be the first to know about exclusive drops and promotions
+          </p>
+          <div class="flex space-x-4 mt-4 text-3xl justify-evenly">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-youtube"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="text-center text-gray-500 text-sm mt-10">
+        @ 2025 Bright Future
+      </div>
+    </footer>
+  </body>
+</html>
