@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/ac83d38264.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      //mobile menu
+      function toggleMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Top nav -->
+    <div class="bg-black text-white">
+      <div
+        class="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-2"
+      >
+        <!-- left section-->
+        <div class="flex items-center space-x-6 text-sm">
+          <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-phone"></i>
+            <span>01-2574451, +977-9800000000</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fa-regular fa-envelope"></i>
+            <span>info@gmail.com</span>
+          </div>
+        </div>
+
+        <!-- right section-->
+        <div class="flex items-center space-x-4 mt-2 md:mt-0">
+          <!-- social icons -->
+          <a href="#" class="text-white">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="#" class="text-white">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a href="#" class="text-white">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <!-- apply now button -->
+          <a
+            href="#"
+            class="bg-white text-black px-2 py-1 text-xs rounded hover:bg-gray-200 md:px-4 md:py-2 md:text-sm"
+          >
+            Apply Now
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- second nav -->
+
+    <nav class="bg-white shadow">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <!-- logo -->
+          <div class="flex items-center">
+            <img src="logo.png" alt="Logo" class="h-10 w-10" />
+            <div class="ml-3">
+              <h1 class="text-lg font-bold text-green-600 leading-none">
+                BRIGHT FUTURE
+              </h1>
+              <span class="text-md text-blue-600 font-bold">
+                COLLEGE/SCHOOL
+              </span>
+            </div>
+          </div>
+
+          <!-- hamburger icon-->
+          <div class="flex md:hidden">
+            <button
+              onclick="toggleMenu()"
+              class="text-gray-700 hover:text-gray-900"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+
+          <!-- nav links -->
+          <div class="hidden md:flex space-x-6">
+            <a href="#" class="text-gray-700 hover:text-blue-500 font-medium"
+              >Home</a
+            >
+
+            <div>
+              <button
+                class="text-gray-700 hover:text-blue-500 font-medium flex items-center"
+              >
+                About Us
+                <i class="fa-solid fa-chevron-down ml-2"></i>
+              </button>
+            </div>
+
+            <div>
+              <button
+                class="text-gray-700 hover:text-blue-500 font-medium flex items-center"
+              >
+                Programs
+                <i class="fa-solid fa-chevron-down ml-2"></i>
+              </button>
+            </div>
+            <div>
+              <button
+                class="text-gray-700 hover:text-blue-500 font-medium flex items-center"
+              >
+                Facilities
+                <i class="fa-solid fa-chevron-down ml-2"></i>
+              </button>
+            </div>
+            <div>
+              <button
+                class="text-gray-700 hover:text-blue-500 font-medium flex items-center"
+              >
+                Student Group
+                <i class="fa-solid fa-chevron-down ml-2"></i>
+              </button>
+            </div>
+
+            <a href="#" class="text-gray-700 hover:text-blue-500 font-medium"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile menu-->
+      <div id="mobile-menu" class="hidden md:hidden bg-gray-100">
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Home</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >About Us</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Facilities</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Students Zone</a
+        >
+
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Programs</a
+        >
+        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- page hero banner -->
+
+    <section
+      class="relative bg-cover bg-center h-64 text-white"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      "
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div
+        class="relative container mx-auto h-full flex flex-col justify-center items-center"
+      >
+        <h1
+          class="text-3xl font-bold uppercase underline underline-offset-[16px] decoration-green-600"
+        >
+          Contact Us
+        </h1>
+      </div>
+    </section>
+
+    <!-- contact logos and form -->
+
+    <div class="max-w-7xl mx-auto pt-16 px-4 lg:px-6">
+      <!-- info section -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <!-- dddress -->
+        <div>
+          <div
+            class="flex justify-center items-center text-green-500 text-4xl mb-4"
+          >
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3 class="text-xl font-semibold">Address</h3>
+          <p class="mt-2 text-gray-600">
+            Satdobato, Lalitpur Mahangarpalika<br />
+            Bagmati Province, Nepal
+          </p>
+        </div>
+        <!-- Contact Info -->
+        <div>
+          <div
+            class="flex justify-center items-center text-green-500 text-4xl mb-4"
+          >
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3 class="text-xl font-semibold">Contact Info</h3>
+          <p class="mt-2 text-gray-600">
+            Email: brightfuture@gmail.com<br />
+            Phone: 0123456
+          </p>
+        </div>
+        <!-- Open Hours -->
+        <div>
+          <div
+            class="flex justify-center items-center text-green-500 text-4xl mb-4"
+          >
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3 class="text-xl font-semibold">Open Hour</h3>
+          <p class="mt-2 text-gray-600">
+            Monday - Friday: 09:00 - 20:00<br />
+            Sunday & Saturday: 10:00 - 22:00
+          </p>
+        </div>
+      </div>
+
+      <!-- contact form -->
+      <div class="mt-16 rounded-lg md:p-12">
+        <h2 class="text-2xl font-semibold text-green-500 text-center">
+          Get in touch
+        </h2>
+        <p class="text-center text-gray-600 mt-4">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, fugiat
+          debitis a sit ab adipisci. Laborum neque sint soluta eveniet, aperiam
+          nam consequuntur assumenda iste, commodi veniam fugiat sit obcaecati?.
+        </p>
+        <form class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="flex flex-col gap-6">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              class="col-span-1 md:col-span-1 px-4 py-2 bg-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
+          </div>
+
+          <div class="flex flex-col gap-6">
+            <label for="email">Your Email</label>
+            <input
+              type="email"
+              class="col-span-1 md:col-span-1 px-4 py-2 bg-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
+          </div>
+
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            class="col-span-1 md:col-span-2 px-4 py-2 bg-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+          />
+
+          <label for="message">Your Message</label>
+          <textarea
+            rows="5"
+            class="col-span-1 md:col-span-2 px-4 py-4 bg-gray-200 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+          ></textarea>
+
+          <button
+            type="submit"
+            class="col-span-1 md:col-span-2 bg-green-500 text-white py-2 rounded-md hover:bg-green-600 rounded"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Google map -->
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d441.7325030160326!2d85.32247645714288!3d27.659802122839984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19d7c199e8e1%3A0x19bdda0b75004087!2sBright%20Future%20H.%20S.%20School%2F%20College!5e0!3m2!1sen!2snp!4v1732979519069!5m2!1sen!2snp"
+      width="400"
+      height="400"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade
+      "
+      class="m-auto max-w-[80%] lg:w-[70%] mt-2 mb-2 lg:mb-6"
+    ></iframe>
+
+    <!-- footer -->
+
+    <footer class="bg-gray-900 text-gray-300 py-10">
+      <div
+        class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 justify-between"
+      >
+        <!-- footer logo and contact -->
+        <div>
+          <img
+            src="https://www.harlow-college.ac.uk/images/harlow_college/study-options/course-areas/bright-futures/redesign/bright-futures-logo-large-cropped.png"
+            alt=""
+            class="mb-4 w-[300px] h-[90px]"
+          />
+          <ul class="space-y-2">
+            <li class="flex items-center space-x-2">
+              <i class="fa-solid fa-location-pin"></i>
+              <span>Satdobato, Lalitpur, Nepal</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fa-solid fa-phone"></i>
+              <span>01-2574451, +977-9800000000</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fa-regular fa-envelope"></i>
+              <span>info@gmail.com, brightfuture.edu.np</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <i class="fa-regular fa-clock"></i>
+              <span>Opening Hours: 7AM - 4PM</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- footer useful links -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">USEFUL LINKS</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-green-500">Join Us</a></li>
+            <li><a href="#" class="hover:text-green-500">About Us</a></li>
+            <li><a href="#" class="hover:text-green-500">Features</a></li>
+            <li><a href="#" class="hover:text-green-500">Support Center</a></li>
+            <li><a href="#" class="hover:text-green-500">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- footer programs -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">PROGRAMS</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-green-500">+2 Management</a></li>
+            <li>
+              <a href="#" class="hover:text-green-500"
+                >Bachelor of Business Studies (BBS)</a
+              >
+            </li>
+            <li><a href="#" class="hover:text-green-500">MBS Program</a></li>
+            <li><a href="#" class="hover:text-green-500">+2 Science</a></li>
+          </ul>
+        </div>
+
+        <!-- subscribe newsletter -->
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-4">
+            SUBSCRIBE NEWSLETTER
+          </h3>
+          <form>
+            <input
+              type="email"
+              placeholder="Email"
+              class="w-full p-2 mb-4 bg-gray-800 text-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+            />
+            <button
+              class="w-full p-2 bg-green-600 text-white font-semibold rounded hover:bg-green-700"
+            >
+              Subscribe
+            </button>
+          </form>
+          <p class="mt-4 text-sm text-gray-400">
+            Be the first to know about exclusive drops and promotions
+          </p>
+          <div class="flex space-x-4 mt-4 text-3xl justify-evenly">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-square-youtube"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="text-center text-gray-500 text-sm mt-10">
+        @ 2025 Bright Future
+      </div>
+    </footer>
+  </body>
+</html>
