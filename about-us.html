@@ -12,8 +12,18 @@
     <script>
       //mobile menu
       function toggleMenu() {
+        const button = document.getElementById("hamburger-button");
         const menu = document.getElementById("mobile-menu");
+
+        button.classList.toggle("rotate-90");
         menu.classList.toggle("hidden");
+      }
+
+      //mobile dropdown
+
+      function toggleDropdown(id) {
+        const dropdown = document.getElementById(id);
+        dropdown.classList.toggle("hidden");
       }
     </script>
   </head>
@@ -63,94 +73,255 @@
     <nav class="bg-white shadow">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
-          <!-- logo -->
+          <!-- Logo -->
           <div class="flex items-center">
             <img src="logo.png" alt="Logo" class="h-10 w-10" />
             <div class="ml-3">
               <h1 class="text-lg font-bold text-green-600 leading-none">
                 BRIGHT FUTURE
               </h1>
-              <span class="text-md text-blue-600 font-bold">
-                COLLEGE/SCHOOL
-              </span>
+              <span class="text-md text-blue-600 font-bold"
+                >COLLEGE/SCHOOL</span
+              >
             </div>
           </div>
 
-          <!-- hamburger icon-->
+          <!-- hamburger icon -->
           <div class="flex md:hidden">
             <button
+              id="hamburger-button"
               onclick="toggleMenu()"
-              class="text-gray-700 hover:text-gray-900"
+              class="text-gray-700 hover:text-gray-900 focus:outline-none transition-transform duration-300"
             >
               <i class="fa-solid fa-bars"></i>
             </button>
           </div>
 
-          <!-- nav links -->
+          <!-- navigation links -->
           <div class="hidden md:flex space-x-6">
-            <a href="#" class="text-gray-700 hover:text-blue-500 font-medium"
-              >Home</a
-            >
+            <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">
+              Home
+            </a>
 
-            <div>
+            <!-- about us dropdown -->
+            <div class="relative group">
               <button
-                class="text-gray-700 hover:text-blue-500 font-medium flex items-center"
+                class="flex items-center text-gray-700 hover:text-blue-500 font-medium"
               >
                 About Us
                 <i class="fa-solid fa-chevron-down ml-2"></i>
               </button>
+              <div
+                class="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md w-40"
+              >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-500 rounded-md"
+                  >about us 1</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-500 rounded-md"
+                  >about us 2</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-500 rounded-md"
+                  >about us 3</a
+                >
+              </div>
             </div>
 
-            <div>
+            <!-- programs dropdown -->
+            <div class="relative group">
               <button
-                class="text-gray-700 hover:text-blue-500 font-medium flex items-center"
+                class="flex items-center text-gray-700 hover:text-blue-500 font-medium"
               >
                 Programs
                 <i class="fa-solid fa-chevron-down ml-2"></i>
               </button>
+              <div
+                class="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md w-40"
+              >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-500 rounded-md"
+                  >program 1</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-500 rounded-md"
+                  >program 2</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-500 rounded-md"
+                  >program 3</a
+                >
+              </div>
             </div>
-            <div>
+
+            <!-- facilities dropdown -->
+            <div class="relative group">
               <button
-                class="text-gray-700 hover:text-blue-500 font-medium flex items-center"
+                class="flex items-center text-gray-700 hover:text-blue-500 font-medium"
               >
                 Facilities
                 <i class="fa-solid fa-chevron-down ml-2"></i>
               </button>
+              <div
+                class="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md w-40"
+              >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-500 rounded-md"
+                  >facilities 1</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-500 rounded-md"
+                  >facilities 2</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-500 rounded-md"
+                  >facilities 3</a
+                >
+              </div>
             </div>
-            <div>
+
+            <!-- student group dropdown -->
+            <div class="relative group">
               <button
-                class="text-gray-700 hover:text-blue-500 font-medium flex items-center"
+                class="flex items-center text-gray-700 hover:text-blue-500 font-medium"
               >
                 Student Group
                 <i class="fa-solid fa-chevron-down ml-2"></i>
               </button>
+              <div
+                class="absolute left-0 hidden group-hover:block bg-white shadow-lg rounded-md w-40"
+              >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-500 rounded-md"
+                  >student group 1</a
+                >
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-500 rounded-md"
+                  >student group 2
+                </a>
+                <a
+                  href="#"
+                  class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-blue-500 rounded-md"
+                  >student group 3</a
+                >
+              </div>
             </div>
 
-            <a href="#" class="text-gray-700 hover:text-blue-500 font-medium"
-              >Contact</a
-            >
+            <a href="#" class="text-gray-700 hover:text-blue-500 font-medium">
+              Contact
+            </a>
           </div>
         </div>
       </div>
 
-      <!-- mobile menu-->
+      <!-- mobile dropdown menu -->
+
       <div id="mobile-menu" class="hidden md:hidden bg-gray-100">
         <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
           >Home</a
         >
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
-          >About Us</a
-        >
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
-          >Facilities</a
-        >
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
-          >Students Zone</a
-        >
 
-        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
-          >Programs</a
-        >
+        <!-- about us dropdown mobile -->
+        <div class="group">
+          <a
+            href="#"
+            class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+            onclick="toggleDropdown('about-dropdown')"
+          >
+            About Us
+            <i class="fa-solid fa-chevron-down text-xs"></i>
+          </a>
+          <div id="about-dropdown" class="hidden ml-4 space-y-1 rounded">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-300"
+              >about us 1</a
+            >
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-300"
+              >about us 2</a
+            >
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-300"
+              >about us 3</a
+            >
+          </div>
+        </div>
+
+        <!-- facilities dropdown mobile -->
+        <div class="group">
+          <a
+            href="#"
+            class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+            onclick="toggleDropdown('facilities-dropdown')"
+          >
+            Facilities
+            <i class="fa-solid fa-chevron-down text-xs"></i>
+          </a>
+          <div id="facilities-dropdown" class="hidden ml-4 space-y-1 rounded">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-300"
+              >facilities 1</a
+            >
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-300"
+              >facilities 2</a
+            >
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-300"
+              >facilities 3</a
+            >
+          </div>
+        </div>
+
+        <!-- students zone dropdown mobile-->
+        <div class="group">
+          <a
+            href="#"
+            class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+            onclick="toggleDropdown('student-zone-dropdown')"
+          >
+            Students Zone
+            <i class="fa-solid fa-chevron-down text-xs"></i>
+          </a>
+          <div id="student-zone-dropdown" class="hidden ml-4 space-y-1 rounded">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-300"
+              >sz 1</a
+            >
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-300"
+              >sz 2</a
+            >
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-300"
+              >sz 3</a
+            >
+          </div>
+        </div>
+
+        <!-- programs dropdown mobile -->
+        <div class="group">
+          <a
+            href="#"
+            class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
+            onclick="toggleDropdown('programs-dropdown')"
+          >
+            Programs
+            <i class="fa-solid fa-chevron-down text-xs"></i>
+          </a>
+          <div id="programs-dropdown" class="hidden ml-4 space-y-1 rounded">
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-300"
+              >program 1</a
+            >
+            <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-300"
+              >program 2</a
+            >
+          </div>
+        </div>
+
         <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-200"
           >Contact</a
         >
@@ -160,7 +331,7 @@
     <!-- about us hero section -->
     <div>
       <section
-        class="relative bg-cover bg-center h-64 text-white"
+        class="relative bg-cover bg-center h-64 text-white z-[-1]"
         style="
           background-image: url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
         "
